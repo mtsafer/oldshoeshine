@@ -50,11 +50,21 @@ $gray-medium-light: #eaeaea;
         float: none;
     }
     .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 30px;
     }
     .collapse.in{
         display:block !important;
+    }
+    .btn-words {
+    	font-size: 35px;
+    }
+    .icon-bar {
+    	margin-right: 10px;
+    }
+    .navbar-toggle.collapsed {
+    	border: 1px solid #d3d3d3;
     }
 }
 
@@ -65,7 +75,11 @@ $gray-medium-light: #eaeaea;
 }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-	max-height: 380px;
+	
+	max-height: 300px;
+}
+.navbar-collapse.in{
+	overflow-y: scroll !important;
 }
 .navbar-toggle.collapsed{
 	min-width: 200px;
@@ -212,17 +226,20 @@ footer {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	h1 {
-  		font-size: 50px;
+  		font-size: 70px;
   	}
   	p {
-  		font-size: 20px;
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
   	}
   	.icon{
-  		min-height: 50px;
+  		min-height: 100px;
   		min-width: auto;
   	}
   	.navbar-inverse .navbar-nav > li > a {
-  		font-size: 20px!important;
+  		font-size: 30px!important;
   		font-weight: bolder;
   		color: white!important;
   	}
@@ -233,17 +250,20 @@ footer {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	h1 {
-  		font-size: 50px;
+  		font-size: 70px;
   	}
   	p {
-  		font-size: 20px;
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
   	}
   	.icon{
-  		min-height: 36px;
+  		min-height: 100px;
   		min-width: auto;
   	}
   	.navbar-inverse .navbar-nav > li > a {
-  		font-size: 20px!important;
+  		font-size: 30px!important;
   		font-weight: bolder;
   		color: white!important;
   	}
@@ -255,17 +275,20 @@ footer {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
   	h1 {
-  		font-size: 50px;
+  		font-size: 70px;
   	}
   	p {
-  		font-size: 20px;
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
   	}
   	.icon{
-  		min-height: 36px;
+  		min-height: 100px;
   		min-width: auto;
   	}
   	.navbar-inverse .navbar-nav > li > a {
-  		font-size: 20px!important;
+  		font-size: 30px!important;
   		font-weight: bolder;
   		color: white!important;
   	}
@@ -278,17 +301,20 @@ footer {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
   	h1 {
-  		font-size: 50px;
+  		font-size: 70px;
   	}
   	p {
-  		font-size: 20px;
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
   	}
   	.icon{
-  		min-height: 36px;
+  		min-height: 100px;
   		min-width: auto;
   	}
   	.navbar-inverse .navbar-nav > li > a {
-  		font-size: 20px!important;
+  		font-size: 30px!important;
   		font-weight: bolder;
   		color: white!important;
   	}
