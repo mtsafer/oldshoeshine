@@ -1,0 +1,30 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+      <div class="center">
+        <%= link_to(image_tag("logo.jpg", class: "logo"), root_path)%>
+      </div>
+    <div class="navbar-header center">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "FAQ", faq_path %></li>
+        <li><%= link_to "Event Service", events_path %></li>
+        <li><%= link_to "Office Visits", visits_path %></li>
+        <li><%= link_to "Services", services_path %></li>
+        <li><%= link_to "Products", products_path %></li>
+        <li><%= link_to "About Us", about_path %></li>
+        <li><%= link_to "Testimonials", testimonials_path %></li>
+        <li><%= link_to "Photo Gallary", photos_path %></li>
+      </ul>
+    </div>
+  </div>
+</header>
