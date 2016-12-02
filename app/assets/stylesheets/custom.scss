@@ -22,50 +22,50 @@ $gray-medium-light: #eaeaea;
 
 @mixin collapse_header {
 	.navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-        margin: auto;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 30px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-    .btn-words {
-    	font-size: 35px;
-    }
-    .icon-bar {
-    	margin-right: 10px;
-    }
-    .navbar-toggle.collapsed {
-    	border: 1px solid #d3d3d3;
-    }
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+      margin: auto;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 30px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .btn-words {
+  	font-size: 35px;
+  }
+  .icon-bar {
+  	margin-right: 10px;
+  }
+  .navbar-toggle.collapsed {
+  	border: 1px solid #d3d3d3;
+  }
 }
 
 /* Header */
@@ -109,7 +109,7 @@ $gray-medium-light: #eaeaea;
 }
 .logo {
 	max-height: 200px;
-	max-width: auto;
+	width: auto;
 	display: inline;
 }
 
@@ -245,6 +245,240 @@ footer {
   	}
   	@include collapse_header;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	h1 {
+  		font-size: 70px;
+  	}
+  	p {
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
+  	}
+  	.icon{
+  		min-height: 100px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 30px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+  	.logo {
+  		max-height: 100px;
+  	}
+  	@include collapse_header;
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  	h1 {
+  		font-size: 70px;
+  	}
+  	p {
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
+  	}
+  	.icon{
+  		min-height: 100px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 30px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+  	.logo {
+  		max-height: 100px;
+
+  	}
+  	button.navbar-toggle{
+  		max-height: 40px;
+  		width: 130px!important;
+  		.btn-words{
+  			font-size: 20px;
+  		}
+  	}
+  	.first {
+  		margin-top: 150px; 
+  	}
+  	@include collapse_header;
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  	h1 {
+  		font-size: 70px;
+  	}
+  	p {
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
+  	}
+  	.icon{
+  		min-height: 100px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 30px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+  	.logo {
+  		max-height: 100px;
+
+  	}
+  	button.navbar-toggle{
+  		max-height: 40px;
+  		width: 130px!important;
+  		.btn-words{
+  			font-size: 20px;
+  		}
+  	}
+  	.first {
+  		margin-top: 150px; 
+  	}
+  	@include collapse_header;
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  	h1 {
+  		font-size: 70px;
+  	}
+  	p {
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
+  	}
+  	.icon{
+  		min-height: 100px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 30px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+  	.logo {
+  		max-height: 100px;
+
+  	}
+  	button.navbar-toggle{
+  		max-height: 40px;
+  		width: 130px!important;
+  		.btn-words{
+  			font-size: 20px;
+  		}
+  	}
+  	.first {
+  		margin-top: 150px; 
+  	}
+  	@include collapse_header;
+}
+
+@media only screen 
+  and (min-device-width: 435px) 
+  and (max-device-width: 773px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  	h1 {
+  		font-size: 70px;
+  	}
+  	p {
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
+  	}
+  	.icon{
+  		min-height: 100px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 30px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+  	.logo {
+  		max-height: 100px;
+
+  	}
+  	button.navbar-toggle{
+  		max-height: 40px;
+  		width: 130px!important;
+  		.btn-words{
+  			font-size: 20px;
+  		}
+  	}
+  	.first {
+  		margin-top: 150px; 
+  	}
+  	@include collapse_header;
+}
+
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 731px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  	h1 {
+  		font-size: 70px;
+  	}
+  	p {
+  		font-size: 25px;
+  	}
+  	p.p{
+  		font-size: 35px;
+  	}
+  	.icon{
+  		min-height: 100px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 30px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+  	.logo {
+  		max-height: 100px;
+
+  	}
+  	button.navbar-toggle{
+  		max-height: 40px;
+  		width: 130px!important;
+  		.btn-words{
+  			font-size: 20px;
+  		}
+  	}
+  	.first {
+  		margin-top: 150px; 
+  	}
+  	@include collapse_header;
+}
+
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
