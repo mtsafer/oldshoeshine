@@ -148,69 +148,88 @@ footer {
 
 /* Portrait and Landscape */
 @media only screen 
-  and (max-device-width: 736px)
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	h1 {
   		font-size: 50px;
   	}
   	p {
-  		font-size: 36px;
+  		font-size: 17px;
   	}
-  	footer{
-  		.icon {
-  			min-height: 50px;
-  			min-width: auto;
-  		}
-	  	.address-col{
-		  	min-width: 736px;
-		  }
-		  .brand-col{
-		  	min-width: 300px;
-		  }
-		  .icon-col{
-		  	ul{
-		  		min-width: 390px;
-		  	}
-		  }
-		}
-  	header {
-	  		.navbar-header {
-	        float: none;
-	    	}
-	    .navbar-left,.navbar-right {
-	        float: none !important;
-	    }
-	    .navbar-toggle {
-	        display: block;
-	        margin: auto;
-	    }
-	    .navbar-collapse {
-	        border-top: 1px solid transparent;
-	        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-	    }
-	    .navbar-fixed-top {
-	        top: 0;
-	        border-width: 0 0 1px;
-	    }
-	    .navbar-collapse.collapse {
-	        display: none!important;
-	    }
-	    .navbar-nav {
-	        float: none!important;
-	        margin-top: 7.5px;
-	    }
-	    .navbar-nav>li {
-	        float: none;
-	    }
-	    .navbar-nav>li>a {
-	        padding-top: 5px;
-	        padding-bottom: 5px;
-	        font-size: 25px!important;
-	    }
-	    .collapse.in{
-	        display:block !important;
-	    }
+  	.icon{
+  		min-height: 50px;
+  		min-width: auto;
   	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 15px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	h1 {
+  		font-size: 50px;
+  	}
+  	p {
+  		font-size: 17px;
+  	}
+  	.icon{
+  		min-height: 36px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 15px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	h1 {
+  		font-size: 50px;
+  	}
+  	p {
+  		font-size: 17px;
+  	}
+  	.icon{
+  		min-height: 36px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 15px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  	h1 {
+  		font-size: 50px;
+  	}
+  	p {
+  		font-size: 17px;
+  	}
+  	.icon{
+  		min-height: 36px;
+  		min-width: auto;
+  	}
+  	.navbar-inverse .navbar-nav > li > a {
+  		font-size: 15px!important;
+  		font-weight: bolder;
+  		color: white!important;
+  	}
+
 }
 
 @media screen and (max-width: 1199px) {
